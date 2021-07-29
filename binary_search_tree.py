@@ -154,42 +154,6 @@ class BST:
     def is_leaf(cls, node):
         return (node.right is None) and (node.left is None)
 
-    # def all_data(self, parent, tree):
-    #
-
-
-if __name__ == '__main__':
-    test_obj = BST()
-    l = [8,9,4,7,3]
-    for i in l[:]:
-        test_obj.insert(i)
-    print(test_obj.size)
-
-    for i in [3,7,4,9,0]:
-        print(f"root data: {test_obj.root.data}")
-        # print(f"first left:{test_obj.root.left.data}")
-        # print(f"first right:{test_obj.root.right.data}")
-        print(f"item to del: {i}")
-        test_obj.remove(i)
-        print('-'*10)
-        # print(f"current root data: {test_obj.root.data}")
-
-    # print(test_obj.calc_depth(test_obj.root))
-    # test_obj.insert(1)
-    # print(test_obj.calc_depth(test_obj.root))
-    # test_obj.insert(2)
-    # print(test_obj.calc_depth(test_obj.root))
-    # test_obj.delete(1)
-    # print(test_obj.calc_depth(test_obj.root))
-    # test_obj.insert(3)
-    # print(test_obj.calc_depth(test_obj.root))
-    # # test_obj.insert(-1)
-    # # test_obj.insert(-2)
-    # # test_obj.insert()
-    # print(test_obj.root.left)
-    # n = Node()
-    # print(test_obj.root.left.data)
-    # print(test_obj.choose_longer(test_obj.root.left, test_obj.root).data)
 
 
 
