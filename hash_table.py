@@ -1,3 +1,7 @@
+"""
+Note: python has in-built hash table called dictionary
+The following implementation is done to understand working of a hash table.
+"""
 class HashTable:
     def __init__(self, size=0):
         """
