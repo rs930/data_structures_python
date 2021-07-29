@@ -59,28 +59,3 @@ class HashTable:
                 k.append(pair[0])
         return k
 
-
-if __name__ == "__main__":
-    test_table = HashTable(5)
-    # print(len(test_table.keys()))
-    print("Expected 'Key not found")
-    test_table.get('b')
-    test_table.set('a', 123)
-    print('Expected test_table with pair[a, 123]')
-    print(test_table)
-    print('Expected 123')
-    print(test_table.get('a'))
-    print('Expected 0, 0')
-    print(test_table.get_index('a'))
-    # print(test_table)
-    test_table.set('b', 456)
-    print('Expected 2 elements')
-    print(test_table)
-    test_table.set('a', [])
-    print('Expected new value in key a')
-    print(test_table)
-    # test_table.set('abc', 74)
-    # print(test_table)
-    print(test_table._HashTable__hash('adb'))
-    print('Expected all keys')
-    print(test_table.keys())
